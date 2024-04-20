@@ -3,22 +3,21 @@
 
    const orderSchema = mongoose.Schema({
      
-    user : {type : objectId, ref : 'users'},
-    restaunrant : {type : objectId, ref : 'restaurants'},
-    items: [{
-        name: String,
-        price: Number,
-        quantity: Number
-      }],
-      totalPrice: {type : Number},
-   
-      deliveryAddress: {
-        street: {type : String},
-        city: {type : String},
-        state: {type : String},
-        country: {type : String},
-        zip: {type : String}
-      },
+    user: { type: Schema.Types.ObjectId, ref: 'users' },
+  restaurant: { type: Schema.Types.ObjectId, ref: 'restaurants' },
+  items: [{
+    name: String,
+    price: Number,
+    quantity: Number
+  }],
+  totalPrice: Number,
+  deliveryAddress: {
+    street: String,
+    city: String,
+    state: String,
+    country: String,
+    zip: String
+  },
       status: {type : String,
     enum : ["placed", "preparing" , "on the way", "delivered"],
      }  // e.g, "placed", "preparing", "on the way", "delivered"
