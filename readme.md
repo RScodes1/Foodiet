@@ -17,24 +17,24 @@ npm start
 
 
 ## API Endpoints
-User Authentication
+User Authentication <br>
+<br>
+POST /api/register: Register a new user <br>
+POST /api/login: Login with existing user credentials <br>
 
-POST /api/register: Register a new user
-POST /api/login: Login with existing user credentials
-
-User Management
-
-PUT /api/user/:id/reset: Reset user password
-Restaurant Management
-POST /api/restaurants: Add a new restaurant
-GET /api/restaurants: Get a list of all restaurants
-GET /api/restaurants/:id: Get details of a specific restaurant
-GET /api/restaurants/:id/menu: Get the menu of a specific restaurant
-PUT /api/restaurants/:id/menu: Add a new item to a restaurant's menu
-DELETE /api/restaurants/:id/menu/:menuId: Delete a menu item from a restaurant's menu
-
-Order Management
-
-POST /api/orders: Place a new order
-GET /api/orders/:id: Get details of a specific order
-PUT /api/orders/:id: Update the status of a specific order
+User Management <br>
+ <br>
+PUT /api/user/:id/reset: Reset user password <br>
+Restaurant Management <br>
+POST /api/restaurants: Add a new restaurant <br>
+GET /api/restaurants: Get a list of all restaurants <br>
+GET /api/restaurants/:id: Get details of a specific restaurant <br>
+GET /api/restaurants/:id/menu: Get the menu of a specific restaurant <br>
+PUT /api/restaurants/:id/menu: Add a new item to a restaurant's menu <br>
+DELETE /api/restaurants/:id/menu/:menuId: Delete a menu item from a restaurant's menu <br>
+<br>
+Order Management <br>
+<br>
+POST /api/orders: Place a new order <br>
+GET /api/orders/:id: Get details of a specific order  <br>
+PUT /api/orders/:id: Update the status of a specific order <br>
