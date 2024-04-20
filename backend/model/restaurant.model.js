@@ -1,11 +1,9 @@
      
    const mongoose = require('mongoose');
 
-   const userSchema = mongoose.Schema({
+   const RestaurantSchema = mongoose.Schema({
     name : {type: String,required: true },
-     email : {type :String, required : true},
-     password : {type: String },
-     address : {
+    address : {
         type : Object,
         street : {
             type : String,
@@ -22,24 +20,41 @@
         zip : {
             type : String,
         }
+     }, menu : {
+          type : Object,
+         name: {type : String},
+          description:{type : String},
+         price: { type : Number},
+         image: { type : String}
      }
-   })
+   });
 
-   const UserModel = mongoose.model("users",userSchema);
+   const RestaurantModel = mongoose.model("restaurants",RestaurantSchema);
 
    module.exports  = {
-    UserModel
+    RestaurantModel
    }
+
+
+
+
 // {
 //     _id: ObjectId,
 //     name: String,
-//     email: String,
-//     password: String,
 //     address: {
 //       street: String,
 //       city: String,
 //       state: String,
 //       country: String,
 //       zip: String
-//     }
+//     },
+//     menu: [{
+//       _id: ObjectId,
+//       name: String,
+//       description: String,
+//       price: Number,
+//       image: String
+//     }]
 //   }
+  
+  
