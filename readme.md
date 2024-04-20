@@ -21,9 +21,10 @@ User Authentication <br>
 <br>
 POST /api/register: Register a new user <br>
 POST /api/login: Login with existing user credentials <br>
-
+<br>
 User Management <br>
- <br>
+
+<br>
 PUT /api/user/:id/reset: Reset user password <br>
 Restaurant Management <br>
 POST /api/restaurants: Add a new restaurant <br>
